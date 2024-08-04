@@ -1,9 +1,3 @@
-from selenium import webdriver
-
-options = webdriver.ChromeOptions()
-options.add_argument('--headless=chrome')
-options.add_extension('coordinates.crx')
-
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
