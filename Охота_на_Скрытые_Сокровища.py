@@ -23,7 +23,7 @@ from selenium.webdriver.common.by import By
 with webdriver.Chrome() as browser:
     browser.get('https://parsinger.ru/methods/1/index.html')
     code = browser.find_element(By.ID, 'result').text
-    while code == 'refresh page':
+    while code == 'Refresh Page':
         browser.refresh()
         code = browser.find_element(By.ID, 'result').text
         if code != 'refresh page':
